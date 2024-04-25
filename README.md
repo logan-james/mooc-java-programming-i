@@ -1,3 +1,3 @@
 # mooc-java-programming-i
 
-University of Helsinki [Java programming i course](https://java-programming.mooc.fi/)
+University of Helsinki [Java Programming I course](https://java-programming.mooc.fi/)
