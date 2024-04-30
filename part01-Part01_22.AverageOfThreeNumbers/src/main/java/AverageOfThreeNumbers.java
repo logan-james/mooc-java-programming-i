@@ -19,3 +19,13 @@ public class AverageOfThreeNumbers {
         System.out.println("The average is " + avg);
     }
 }
+/*
+ * Note -- if multiplying or type casting is done first then
+ * the integer will take an integer.
+ * Example:
+ * int dividend = 3;
+ * int divisor = 2;
+ * double result = dividend / divisor * 1.0;
+ * system.out.println(result) // answer = 1.0
+ * answer is 1 and not 1.5 because 3/2 was executed first
+ */
