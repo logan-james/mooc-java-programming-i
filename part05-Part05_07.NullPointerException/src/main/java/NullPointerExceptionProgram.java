@@ -21,5 +21,9 @@ public class NullPointerExceptionProgram {
             index++;
         }
 
+        // Testing github
+        System.out.println("Testing");
+        int v = 0;
+
     }
 }
