@@ -33,6 +33,7 @@ public class Money {
     }
 
     // Exercise
+    // Part 1
     public Money plus(Money addition) {
         int newEuros = this.euros + addition.euros();
         int newCents = this.cents + addition.cents();
@@ -40,6 +41,37 @@ public class Money {
         if (newCents >= 100) {
             newEuros += newCents / 100;
             newCents = newCents % 100;
+        }
+
+        return new Money(newEuros, newCents);
+    }
+
+    // Part 2
+    public boolean lessThan(Money compared) {
+        if (this.euros < compared.euros()) {
+            return true;
+        }
+
+        if (this.euros == compared.euros() && this.cents < compared.cents()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    // Part 3
+    public Money minus(Money decreaser) {
+        int newEuros = this.euros - decreaser.euros();
+        int newCents = this.cents - decreaser.cents();
+
+        if (newCents < 0) {
+            newEuros -= 1;
+            newCents += 100;
+        }
+
+        if (newEuros < 0) {
+            newEuros = 0;
+            newCents = 0;
         }
 
         return new Money(newEuros, newCents);
