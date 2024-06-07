@@ -34,10 +34,16 @@ public class Money {
 
     // Exercise
     // Part 1
+    // method should return new money object that is worth total amount for
+    // object whose method was called and the object that is received as the
+    // parameter
     public Money plus(Money addition) {
+        // creating new variables that take current money + the addition money
         int newEuros = this.euros + addition.euros();
         int newCents = this.cents + addition.cents();
 
+        // logic for money, if cents equals or over 100, add to euros, remainder goes to
+        // cents
         if (newCents >= 100) {
             newEuros += newCents / 100;
             newCents = newCents % 100;
