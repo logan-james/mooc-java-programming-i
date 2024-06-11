@@ -14,6 +14,9 @@ public class Menu {
 
         // add meal to menu
         // if meal already on list, don't add
+        if (!this.meals.contains(meal)) {
+            this.meals.add(meal);
+        }
     }
 
     // prints meals
