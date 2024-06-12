@@ -22,6 +22,9 @@ public class Menu {
     // prints meals
     public void printMeals() {
 
+        for (String meal : this.meals) {
+            System.out.println(meal);
+        }
     }
 
     // clears menu
