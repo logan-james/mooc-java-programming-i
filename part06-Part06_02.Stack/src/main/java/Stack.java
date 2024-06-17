@@ -1,7 +1,15 @@
+import java.util.ArrayList;
+
 public class Stack {
 
-  public boolean isEmpty() {
+  private ArrayList<String> stack;
 
+  public Stack() {
+    this.stack = new ArrayList<>();
+  }
+
+  public boolean isEmpty() {
+    return this.stack.isEmpty();
   }
 
   public void add(String value) {
