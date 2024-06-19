@@ -13,10 +13,10 @@ public class Stack {
   }
 
   public void add(String value) {
-
+    this.stack.add(value);
   }
 
   public ArrayList<String> values() {
-
+    return this.stack;
   }
 }
