@@ -19,4 +19,11 @@ public class Stack {
   public ArrayList<String> values() {
     return this.stack;
   }
+
+  public String take() {
+    if (this.isEmpty()) {
+      return null;
+    }
+    return this.stack.remove(this.stack.size() - 1);
+  }
 }
