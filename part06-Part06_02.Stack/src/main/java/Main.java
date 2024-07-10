@@ -24,5 +24,8 @@ public class Main {
         while (!s.isEmpty()) {
             System.out.println(s.take());
         }
+
+        // Testing
+        System.out.println("Hi");
     }
 }
