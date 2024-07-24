@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Try out your class here
+        // This is a test for github
         Stack s = new Stack();
         System.out.println(s.isEmpty()); // true
         System.out.println(s.values()); // []
@@ -25,7 +26,5 @@ public class Main {
             System.out.println(s.take());
         }
 
-        // Testing
-        System.out.println("Hi");
     }
 }
