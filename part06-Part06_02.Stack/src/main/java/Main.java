@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
         // Try out your class here
-        // This is a test for github
         Stack s = new Stack();
         System.out.println(s.isEmpty()); // true
         System.out.println(s.values()); // []
@@ -21,9 +20,11 @@ public class Main {
         s.add("3");
         s.add("4");
         s.add("5");
+        // testing
 
+        s.add("6");
+        System.out.println(s.take());
         while (!s.isEmpty()) {
-            System.out.println(s.take());
         }
 
     }
