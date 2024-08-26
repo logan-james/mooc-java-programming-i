@@ -20,10 +20,6 @@ public class Main {
         s.add("3");
         s.add("4");
         s.add("5");
-        //--- delete ---
-        s.add("6")
-        // ----------
-        System.out.println(s.take());
         while (!s.isEmpty()) {
         }
 
